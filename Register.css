@@ -37,17 +37,19 @@ div{
     padding: 20px;
 }
 
-#dropdownMenuButton1 i{
-    color: #69717b;
-    font-size: 18px;
-}
-
-#dropdownMenuButton1:hover i{
+.fa-bars:hover{
     color: #bfc4ca;
 }
 
-#dropdownMenuButton1{
+.fa-opencart{
+    margin-left: 26px;
+}
+
+.btn{
     border-color: transparent !important;
+    color: #b4bcc8;
+    font-size: 14px;
+    padding: 0;
 }
 
 .dropdown-menu{
@@ -68,8 +70,39 @@ div{
     font-size: 14px;
 }
 
-.dropdown-menu li:first-child{
+.dropdown-item:hover,
+.dropdown-item:focus{
+    background: #2C3542;
+    color: #b4bcc8;
+}
+
+.dropdown-menu .img1{
     background-image: url("./img/md-header-bg.jpg");
     height: 86px;
     background-size: cover;
+}
+
+#home{
+    background-color: #36c6d3;
+    color: white;
+    position: relative;
+}
+
+#home i{
+    color: white;
+}
+
+#home::after{
+    content: "";
+    position: absolute;
+    border: 13px solid;
+    border-color: transparent #f2f3f8 transparent transparent;
+    right: 0;
+    top: calc(50% - 13px);
+}
+
+@media (min-width: 992px){
+    .control{
+        display: block !important;
+    }
 }

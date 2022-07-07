@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Register.css">
     
 </head>
 <body>
@@ -36,38 +36,33 @@
                     <i class="fa-solid fa-angle-down p-2"></i>
                 </div>
             </div>
-            <button class="col-1 btn d-block d-lg-none p-0 w-auto" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="col-1 btn d-block d-lg-none w-auto fs-4" onclick="menu(document.querySelector('.control'))">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </div>
 
+
     <!-- main -->
     <div class="row main m-0">
 
         <!-- menu -->
-        <div class="col-lg-2 p-0 bg-red dropdown">
-            <button class="col-1 btn d-block d-lg-none p-0 w-auto" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><div class="dropdown-item p-0"></div></li>
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-desktop"></i> <span>Trang Chủ</span></a></li>
+        <div class="col-lg-2 p-0">
+            <ul class="dropdown-menu control">
+                <li><div class="dropdown-item p-0 img1"></div></li>
+                <li><a class="dropdown-item" id="home" href="#"><i class="fa-solid fa-desktop"></i>Trang Chủ</a></li>
 
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-border-all"></i> <span>Đăng ký học</span></a></li>
-                <!-- <li>
-                    <a class="dropdown-item" href="#">
+                <!-- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-border-all"></i> <span>Đăng ký học</span></a></li> -->
+                <li>
+                    <a class="dropdown-item" href="#" onclick="menu(document.querySelector('.control-register'), document.querySelector('.angle'))">
                         <i class="fa-solid fa-border-all"></i> 
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                            Đăng ký học
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item" href="#">Đăng ký học mới</a></li>
-                            <li><a class="dropdown-item" href="#">Kết quả đăng ký học</a></li>
-                        </ul>
+                        <button class="btn"> Đăng ký học <i class="fa-solid fa-angle-down angle p-1"></i></button>
                     </a>
-                </li> -->
-
+                    <ul class="dropdown-menu control-register">
+                        <li><a class="dropdown-item" href="#"><i class="fa-brands fa-opencart"></i>Đăng ký học mới</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-brands fa-opencart"></i>Kết quả đăng ký học</a></li>
+                    </ul>
+                </li>
                 
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-magnifying-glass"></i> Tra cứu điểm tổng hợp</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list-ul"></i> Điểm rèn luyện</a></li>
@@ -94,5 +89,7 @@
 
     <!-- Import thư viện js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="register.js"></script>
 </body>
 </html>
