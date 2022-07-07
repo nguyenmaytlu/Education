@@ -1,0 +1,75 @@
+
+body{
+    color: #98a6ba;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+}
+
+i{
+    color: #6b788b;
+    margin-right: 8px;
+}
+
+div{
+    padding: 0;
+}
+
+.header,
+.footer{
+    background-color: #2b3643;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.logo{
+    width: 36px;
+}
+
+.avatar{
+    width: 28px;
+}
+
+.container{
+    background-color: #f2f3f8;
+    padding: 20px;
+}
+
+#dropdownMenuButton1 i{
+    color: #69717b;
+    font-size: 18px;
+}
+
+#dropdownMenuButton1:hover i{
+    color: #bfc4ca;
+}
+
+#dropdownMenuButton1{
+    border-color: transparent !important;
+}
+
+.dropdown-menu{
+    display: block;
+    position:relative;
+    border-radius: 0;
+    background: #2C3542;
+    min-width: 14rem;
+    padding: 0;
+    border: 0;
+}
+
+.dropdown-menu a{
+    color: #b4bcc8;
+    border-top: 1px solid #3d4957;
+    background-color: #364150;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.dropdown-menu li:first-child{
+    background-image: url("./img/md-header-bg.jpg");
+    height: 86px;
+    background-size: cover;
+}
