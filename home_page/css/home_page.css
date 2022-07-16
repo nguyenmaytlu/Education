@@ -1,0 +1,147 @@
+
+/* header */
+
+header{
+    border-bottom: 1px solid #b2b2b2;
+    padding: 20px 0 17px 0;
+    border-top: 10px solid #2b3f8d;
+}
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img[alt = "logo"]{
+    width: 90%;
+    height: 90%;
+}
+
+header div section:last-child{
+    margin-left: 26px;
+}
+
+header div section:last-child div:first-child{
+    width: 103px;
+    margin: auto 0 auto auto;
+    display: flex;
+    padding-bottom: 3px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #bdccd2;
+}
+
+header div section:last-child div:first-child a{
+    margin-left: 4px;
+}
+
+header div section:last-child div:first-child a:first-child{
+    margin: 0 10px 0 6px;
+    color: #454545;
+    text-decoration: none;
+}
+
+header .input-group span{
+    background: #f2f7f9;
+}
+
+header .input-group input{
+    border-left: 0;
+    background: #f2f7f9;
+    width: 210px !important;
+    font-size: 12px !important;
+}
+
+header .input-group .btn{
+    background-image: url("../images/bgr-submit.png");
+    font-size: 13px;
+    font-weight: 700;
+    color: #437b8f;
+    border: 1px solid #91cde6;
+    padding: 0 14px;
+}
+
+.fa-magnifying-glass {
+    color: #3533339c;
+}
+
+
+/*  */
+header + section{
+    background-image: url("../images/bgr-slider.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header + section nav{
+    background-color: #0a1f77;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+}
+
+header + section nav div >a {
+    position: relative;
+    display: block;
+    line-height: 47px;
+    font-size: 13px;
+    padding: 0 16px;
+}
+
+header + section nav div >a::before {
+    content: '';
+    background: #a7a8a8;
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: -1px;
+}
+
+header + section nav div:first-child >a::before{
+    display: none;
+}
+
+header + section nav div{
+    position: relative;
+}
+
+header + section nav div ul{
+    display: none;
+    position: absolute;
+    top: 47px;
+    background-color: #50bbff;
+    width: 260px;
+}
+
+header + section nav div ul li{
+    padding: 11px 16px;
+    border-bottom: 1px solid #96d6ff;
+}
+
+header + section .menu_item{
+    display: block;
+}
+
+header + section .menu_item i{
+    font-size: 12px;
+}
+
+header + section .menu_item:hover i,
+header + section .menu_item:hover{
+    font-style: italic;
+    color: #0a58ca;
+}
+
+header + section nav div:hover,
+header + section nav div:hover ul{
+    background-color:  #50bbff;
+    display: block;
+}
+
+#carouselExampleSlidesOnly{
+    height: 380px;
+}
