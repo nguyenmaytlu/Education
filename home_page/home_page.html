@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ trường đại học Thủy Lợi</title>
 
+    <!-- favicon -->
+    <link rel="icon" href="images/Logo-DH-Thuy-Loi.webp">
+
     <!-- Import thư viện CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -26,7 +29,7 @@
 
     <!-- header -->
     <header>
-        <div class="container">
+        <div class="container-sm container-xs">
             <section>
                 <a href="home_page.html">
                     <img src="images/logo.png" alt="logo">
@@ -35,7 +38,7 @@
 
             <section>
                 <div>
-                    <a href="#">Login</a>
+                    <a href="../personal_account_page/registration_page.html">Login</a>
                     <a href="#"><img src="images/vi.jpg" alt="VietNam"></a>
                     <a href="#"><img src="images/en.jpg" alt="English"></a>
                 </div>
@@ -49,10 +52,10 @@
     </header>
 
     <section>
-        <div class="container">
-            <nav>
+        <div class="container-sm container-xs">
+            <nav id="boxnoidung" class="collapse">
                 <div>
-                    <a href=""><i class="fa-solid fa-house"></i></a>
+                    <a href=""><i class="fa-solid fa-house text-white"></i></a>
                 </div>
                 <div>
                     <a href="">GIỚI THIỆU</a>
@@ -130,29 +133,71 @@
                     <a href="">LIÊN HỆ</a>
                 </div>
             </nav>
+
+        </div>
+        <div class="d-flex d-lg-none">
+            <div class="input-group input-group-sm container-sm container-xs">
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#boxnoidung" aria-expanded="false" ><i class="fa-solid fa-bars text-white fs-5"></i></button>    
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
         </div>
 
         <!-- carousel -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide container" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide container-sm container-xs" data-bs-ride="carousel">
             <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100">
+              <a href="" class="carousel-item active h-100">
                 <img src="images/carousel_1.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-              <div class="carousel-item h-100">
+              </a>
+              <a href="" class="carousel-item h-100">
                 <img src="images/carousel_2.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-              <div class="carousel-item h-100">
+              </a>
+              <a href="" class="carousel-item h-100">
                 <img src="images/carousel_3.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-              <div class="carousel-item h-100">
+              </a>
+              <a href="" class="carousel-item h-100">
                 <img src="images/carousel_4.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
+              </a>
             </div>
-          </div>
+        </div>
     </section>
 
-    <main class="container">
-
+    <main class="container-sm container-xs">
+        <div class="d-flex align-items-center flex-wrap quickLinkPane mt-4">
+            <a href="">
+                <img src="images/tuyen_sinh.png" alt="">
+                <div>Tuyển sinh</div>
+            </a>
+            <a href="">
+                <img src="images/viec_lam.png" alt="">
+                <div>Thông tin việc làm</div>
+            </a>
+            <a href="">
+                <img src="images/quality.jpg" alt="">
+                <div>Đảm bảo chất lượng</div>
+            </a>
+            <a href="">
+                <img src="images/www.jpg" alt="">
+                <div>Tạp chí</div>
+            </a>
+            <a href="">
+                <img src="images/library.jpg" alt="">
+                <div>Thư viện</div>
+            </a>
+            <a href="">
+                <img src="images/email.jpg" alt="">
+                <div>TLU Mail</div>
+            </a>
+            <a href="">
+                <img src="images/lichcongtac.jpg" alt="">
+                <div>Lịch công tác</div>
+            </a>
+            <a href="">
+                <img src="images/user.jpg" alt="">
+                <div>Đăng ký học</div>
+            </a>
+        </div>
+        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

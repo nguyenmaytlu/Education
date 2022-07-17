@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 	font-family: 'Roboto', sans-serif;
-	color: white;
+	color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,8 +50,4 @@ table {
 
 a {
 	text-decoration: none;
-}
-
-.container{
-    width: 1195px;
 }

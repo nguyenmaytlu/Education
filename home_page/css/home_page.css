@@ -73,17 +73,19 @@ header + section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 header + section nav{
     background-color: #0a1f77;
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 !important;
 }
 
+
 header + section nav div >a {
+    color: white;
     position: relative;
     display: block;
     line-height: 47px;
@@ -113,6 +115,7 @@ header + section nav div{
 header + section nav div ul{
     display: none;
     position: absolute;
+    z-index: 1;
     top: 47px;
     background-color: #50bbff;
     width: 260px;
@@ -121,14 +124,17 @@ header + section nav div ul{
 header + section nav div ul li{
     padding: 11px 16px;
     border-bottom: 1px solid #96d6ff;
+
 }
 
 header + section .menu_item{
+    color: white;
     display: block;
 }
 
 header + section .menu_item i{
     font-size: 12px;
+    color: white;
 }
 
 header + section .menu_item:hover i,
@@ -137,12 +143,219 @@ header + section .menu_item:hover{
     color: #0a58ca;
 }
 
-header + section nav div:hover,
+header + section nav div:hover{
+    background-color: #04518b;
+}
+
 header + section nav div:hover ul{
     background-color:  #50bbff;
     display: block;
 }
 
-#carouselExampleSlidesOnly{
-    height: 380px;
+header + section .input-group{
+    padding: 9px;
 }
+
+header + section > div:nth-child(2){
+    background-color: #0a1f77;
+    height: 42px;
+}
+
+header + section button{
+    border: transparent !important;
+    padding: 0 16px 0 6px !important;
+}
+
+header + section button:focus{
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+header + section button:hover{
+    background-color: transparent !important;
+}
+
+header + section .form-control,
+header + section .input-group-text{
+    padding: 0 0.5rem !important;
+    background-color: white;
+    border: 0;
+}
+
+header + section .form-control:focus{
+    box-shadow: none;
+}
+
+
+/* main */
+
+/* quickLinkPane */
+.quickLinkPane{   
+    border-bottom: 1px solid #eee;
+    justify-content:space-around ;
+}
+
+.quickLinkPane a{
+    margin: 0 11.5px 20px 11.5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.quickLinkPane a div{
+    color: #001373;
+    width: 76px;
+    text-align: center;
+}
+
+.quickLinkPane img{
+    object-fit: contain;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 14px;
+}
+
+
+
+
+/* responsive */
+
+@media (min-width: 1200px){
+    .container-sm
+    {
+        width: 1195px;
+    }
+
+    #carouselExampleSlidesOnly{
+        height: 380px;
+    }
+    
+    header + section nav{
+        display: flex !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .container-sm
+    {
+        width: 1195px;
+    }
+
+    #carouselExampleSlidesOnly{
+        height: 380px;
+    }
+
+    header + section nav{
+        display: flex !important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+    .container-sm
+    {
+        width: 1195px;
+    }
+
+    #carouselExampleSlidesOnly{
+        height: 380px;
+    }
+
+    header + section nav {
+        position: absolute;
+        left: 0;
+        top: 42px;
+        /* display: none; */
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        z-index: 5;
+        background-color: #4896d1;
+
+    }
+
+    header + section nav div ul{
+        position: relative;
+        width: 100%;
+        top: 0;
+        box-shadow: 1px 6px 10px rgb(12 67 150 / 52%);
+
+    }
+
+    header + section nav div{
+        width: 100%;
+        border-top: 1px solid #2570b0;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .container-sm
+    {
+        width: 1195px;
+    }
+
+    #carouselExampleSlidesOnly{
+        height: 200px;
+    }
+
+    header + section nav {
+        position: absolute;
+        left: 0;
+        top: 42px;
+        /* display: none; */
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        z-index: 5;
+        background-color: #4896d1;
+    }
+
+        
+    header + section nav div ul{
+        position: relative;
+        top: 0;
+        width: 100%;
+        box-shadow: 1px 6px 10px rgb(12 67 150 / 52%);
+    }
+
+    header + section nav div{
+        width: 100%;
+        border-top: 1px solid #2570b0;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .container-xs
+    {
+        width: 100%;
+    }
+
+    #carouselExampleSlidesOnly{
+        height: 200px;
+    }
+
+    header + section nav {
+        position: absolute;
+        left: 0;
+        top: 42px;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        z-index: 5;
+        background-color: #4896d1;
+    }
+        
+    header + section nav div ul{
+        position: relative;
+        top: 0;
+        width: 100%;
+        box-shadow: 1px 6px 10px rgb(12 67 150 / 52%);
+    }
+
+    header + section nav div{
+        width: 100%;
+        border-top: 1px solid #2570b0;
+
+    }
+}
+
