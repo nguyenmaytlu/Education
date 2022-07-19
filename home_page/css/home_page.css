@@ -1,5 +1,4 @@
 
-
 /* header */
 
 header{
@@ -124,7 +123,6 @@ header + section nav div ul{
 header + section nav div ul li{
     padding: 11px 16px;
     border-bottom: 1px solid #96d6ff;
-
 }
 
 header + section .menu_item{
@@ -213,6 +211,115 @@ header + section .form-control:focus{
     height: 25px;
     margin-bottom: 14px;
 }
+
+
+/* content_1 */
+.content_1 {
+    margin: 25px 0;
+}
+
+.content_1 .row >div{
+    margin: 20px 0;
+}
+
+.content_1 .item b{
+    display: block;
+    margin: 16px 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.content_1 .item div{
+    line-height: 19px;
+}
+
+.content_1 .button{
+    display: flex;
+    justify-content: center;
+}
+
+.content_1 button{
+    width: 50%;
+    padding: 11px 0;
+    margin-bottom: 6px;
+    border: 1px solid black;
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.content_1 .col-lg-4 ul{
+    list-style: disc;
+    width: 90%;
+    margin-left: auto;
+}
+
+.content_1 li{
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.content_1 li a{
+    color: #111111;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.content_1 ul >a{
+    display: inline-block;
+    margin-top: 10px;
+    float: right;
+    color: rgb(2,139,255);
+}
+
+.content_1 .col-lg-4 ul >a i{
+    font-size: 11px;
+    color: rgb(2,139,255);
+}
+
+.content_1 h2{
+    padding: 11px 0;
+    margin-bottom: 6px;
+    background-color: #e7e8f1;
+    text-align: center;
+    color: #001373;
+    font-size: 20px;
+}
+
+.content_1 .list_2{
+    display: none;
+}
+
+.content_1 button:first-child{
+    background-color: white;
+    color: #c40001;
+}
+
+
+.content_1 .col-lg-3 ul{
+    padding: 8px;
+    border: 1px solid #b2b2b2;
+}
+
+.content_1 .col-lg-3 ul li{
+    margin: 0 0 6px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.content_1 .col-lg-3 ul li:last-child{
+    border: 0;
+    margin-bottom: 0;
+}
+
+.content_1 .col-lg-3 ul li a{
+    line-height: 9px;
+    color: #001373;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
 
 
 
