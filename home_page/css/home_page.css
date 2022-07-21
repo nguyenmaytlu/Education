@@ -214,7 +214,7 @@ header + section .form-control:focus{
 
 
 /* content_1 */
-.content_1 {
+.content_1 .row{
     margin: 25px 0;
 }
 
@@ -249,12 +249,12 @@ header + section .form-control:focus{
 }
 
 .content_1 .col-lg-4 ul{
-    list-style: disc;
-    width: 90%;
+    padding-left: 40px;
     margin-left: auto;
 }
 
 .content_1 li{
+    position: relative;
     margin: 10px 0;
     padding: 5px 0;
     border-bottom: 1px solid #ccc;
@@ -266,21 +266,21 @@ header + section .form-control:focus{
     font-size: 14px;
 }
 
-.content_1 ul >a{
+main .all_content{
     display: inline-block;
     margin-top: 10px;
     float: right;
     color: rgb(2,139,255);
 }
 
-.content_1 .col-lg-4 ul >a i{
+main .all_content i{
     font-size: 11px;
     color: rgb(2,139,255);
 }
 
 .content_1 h2{
     padding: 11px 0;
-    margin-bottom: 6px;
+    margin:0 0 6px 0;
     background-color: #e7e8f1;
     text-align: center;
     color: #001373;
@@ -295,7 +295,6 @@ header + section .form-control:focus{
     background-color: white;
     color: #c40001;
 }
-
 
 .content_1 .col-lg-3 ul{
     padding: 8px;
@@ -319,8 +318,104 @@ header + section .form-control:focus{
     font-weight: 500;
 }
 
+.content_2, .content_4, .content_6{
+    background-color: #efefef;
+}
 
+.content_3, .content_4, .content_5, .content_6{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
 
+main .img_height{
+    height: 160px;
+    margin-bottom: 12px;
+}
+
+main h2{
+    margin-left: 11px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #001373;
+}
+
+main .card-text{
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+main .padding-ul{
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+main .li{
+    position: relative;
+    border-bottom: 1px dotted #ccc;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+main .content_1 .list_1 li::before,
+main .li::before {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #457eb2;
+    border: 1px solid #fff;
+    content: '';
+    margin-right: 4px;
+    vertical-align: middle;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+}
+
+/* footer */
+footer{
+    margin-top: 90px;
+}
+
+footer >div:first-child{
+    background-color: #004eaf;
+}
+
+footer >div:last-child{
+    padding: 25px 0;
+    background-color: #001373;
+}
+
+footer .title{
+    padding: 14px 0;
+    height: 63px;
+    align-items: center;
+}
+
+footer .title h1{
+    font-size: 21px;
+    color: white;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+footer .title a{
+    margin-left: 11px;
+}
+
+footer p{
+    color: white;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 5px;
+}
+
+hr{
+    border-top-color: rgb(255 255 255 / 82%);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 
 
@@ -428,6 +523,14 @@ header + section .form-control:focus{
         width: 100%;
         border-top: 1px solid #2570b0;
     }
+
+    main .img_height{
+        height: 15rem;
+    }
+
+    footer .title h1{
+        font-size: 19px;
+    }
     
 }
 
@@ -462,7 +565,14 @@ header + section .form-control:focus{
     header + section nav div{
         width: 100%;
         border-top: 1px solid #2570b0;
+    }
 
+    main .img_height{
+        height: 15rem;
+    }
+
+    footer .row:first-child h1{
+        font-size: 17px;
     }
 }
 
