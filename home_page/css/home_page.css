@@ -82,7 +82,6 @@ header + section nav{
     padding: 0 !important;
 }
 
-
 header + section nav div >a {
     color: white;
     position: relative;
@@ -357,6 +356,7 @@ main .li{
 }
 
 main .content_1 .list_1 li::before,
+main .content_1 .list_2 li::before,
 main .li::before {
     width: 7px;
     height: 7px;
